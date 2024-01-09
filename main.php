@@ -4,6 +4,7 @@
  *
  * @link     http://dokuwiki.org/template:ipari
  * @author   Kwangyoung Lee <ipari@leaflette.com>
+ * @author   Leonard Heyman <lenehey@gmail.com>
  * @license  GPL 2 (http://www.gnu.org/licenses/gpl.html)
  */
 
