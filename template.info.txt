@@ -1,0 +1,8 @@
+base     white-resume
+author   Leonard Heyman
+email    lenehey@gmail.com
+date     2024-01-09
+name     White Template
+desc     Based on “White Template” by Kwangyoung Lee.  A “simple, minimal and responsive template.”  A few cosmetic changes were made to Kwangoung’s template:  The main icon that opens the side window was changed to the “hamburger” icon from the “pencil” (also known as the “edit”) icon.  For users that are not logged in, now, only the “login” icon is shown, and if users are permitted to register then the “register” icons is shown.
+url      https://www.dokuwiki.org/template:white-resume
+
