@@ -42,9 +42,10 @@ $showSidebar = page_findnearest($conf['sidebar']);
                 </div>
                 <div class="right">
                     <?php 
-			if (in_array('search', $conf['disableactions'])) {
-    				echo '<button class="btn_search">Search</button>';
-			} ?>			
+                    if (in_array('search', $conf['disableactions'])) {
+                        echo '<button class="btn_search">Search</button>';
+                    } 
+		    ?>
                     <button class="btn_right" accesskey="m", title="[M]">Edit</button>
                 </div>
             </div>
