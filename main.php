@@ -32,23 +32,25 @@ $showSidebar = page_findnearest($conf['sidebar']);
         <?php tpl_includeFile('header.html') ?>
 
         <!-- ********** HEADER ********** -->
-        <div id="dokuwiki__header">
-            <div class="group">
-                <h1><?php tpl_link(wl(),$conf['title'],'accesskey="h" title="[H]"') ?></h1>
-                <div class="left">
-                    <?php if ($showSidebar): ?>
-                    <button class="btn_left" accesskey="s", title="[S]">Nav</button>
-                    <?php endif; ?>
-                </div>
-                <div class="right">
-                    <button class="btn_search">Search</button>
-                    <button class="btn_right" accesskey="m", title="[M]">Edit</button>
-                </div>
-            </div>
-            <div class="search">
-                <?php tpl_searchform(); ?>
-            </div>
-        </div><!-- /header -->
+		<div id="dokuwiki__header">
+			<div class="group">
+				<h1><?php tpl_link(wl(),$conf['title'],'accesskey="h" title="[H]"') ?></h1>
+				<div class="left">
+					<?php if ($showSidebar): ?>
+					<button class="btn_left" accesskey="s", title="[S]">Nav</button>
+					<?php endif; ?>
+				</div>
+				<div class="right">
+					<?php if (!in_array('search', explode(',', $conf['disableactions']))): ?> <!-- Check if search is not disabled -->
+						<button class="btn_search">Search</button>
+					<?php endif; ?>
+					<button class="btn_right" accesskey="m", title="[M]">Edit</button>
+				</div>
+			</div>
+			<div class="search">
+				<?php tpl_searchform(); ?>
+			</div>
+		</div><!-- /header -->
 
         <!-- ********** sidebar ********** -->
         <div id="sidebar_wrapper">
